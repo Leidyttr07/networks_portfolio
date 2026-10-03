@@ -142,7 +142,7 @@ Representa la red externa desde la cual se realizan las pruebas de acceso a los 
 
 Se realizó una prueba de conectividad desde un equipo perteneciente a la MZ hacia la red externa.
 
-![MZ hacia Internet](evidence/02-mz-to-internet.png)
+![MZ hacia Internet](01-firewall-dmz-nat-acl/evidence/02-mz-to-internet.png)
 
 ### Resultado
 
