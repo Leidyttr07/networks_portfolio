@@ -154,7 +154,7 @@ La prueba permite verificar la comunicación desde la red interna hacia el segme
 
 Se verificaron las traducciones generadas por el router mediante la tabla de NAT.
 
-![Traducciones NAT](evidence/03-nat-translations.png)
+![Traducciones NAT](01-firewall-dmz-nat-acl/evidence/03-nat-translations.png)
 
 La tabla permite observar las asociaciones entre las direcciones utilizadas por los equipos internos y las direcciones empleadas para la comunicación externa.
 
@@ -181,7 +181,7 @@ La publicación de estos servicios se realiza mediante mecanismos de NAT estáti
 
 Se realizó una prueba de comunicación desde la red interna hacia la DMZ.
 
-![MZ hacia DMZ](evidence/05-mz-to-dmz.png)
+![MZ hacia DMZ](01-firewall-dmz-nat-acl/evidence/05-mz-to-dmz.png)
 
 ### Resultado
 
@@ -193,7 +193,7 @@ Se verificó la comunicación entre la MZ y la DMZ de acuerdo con las políticas
 
 Se realizó una prueba de acceso al servidor Web ubicado en la DMZ desde un equipo perteneciente a la red interna.
 
-![MZ hacia servidor Web](evidence/06-mz-to-dmz-web.png)
+![MZ hacia servidor Web](01-firewall-dmz-nat-acl/evidence/06-mz-to-dmz-web.png)
 
 ### Resultado
 
@@ -204,7 +204,7 @@ Se verificó el acceso al servicio Web desde la red interna.
 
 Se realizó una prueba de acceso desde la red externa hacia el servidor Web ubicado en la DMZ.
 
-![Internet hacia servidor Web](evidence/07-internet-to-dmz-web.png)
+![Internet hacia servidor Web](01-firewall-dmz-nat-acl/evidence/07-internet-to-dmz-web.png)
 
 El flujo de comunicación puede representarse conceptualmente de la siguiente manera:
 
@@ -221,13 +221,13 @@ Servidor Web
    |
   DMZ
 
-![Internet hacia servidor Web](evidence/07-internet-to-dmz-web.png)
+![Internet hacia servidor Web](01-firewall-dmz-nat-acl/evidence/07-internet-to-dmz-web.png)
 
 ## 8.4 Acceso FTP desde Internet
 
 Se realizó una prueba de acceso al servicio FTP ubicado en la DMZ desde la red externa.
 
-![FTP desde Internet hacia DMZ](evidence/09-ftp-internet-to-dmz.png)
+![FTP desde Internet hacia DMZ](01-firewall-dmz-nat-acl/evidence/09-ftp-internet-to-dmz.png)
 
 La prueba permitió establecer una conexión con el servidor FTP ubicado en la DMZ y realizar la autenticación con las credenciales configuradas.
 
@@ -249,7 +249,7 @@ Las ACL permiten establecer políticas de acceso considerando:
 - Servicio.
 - Sentido del tráfico.
 
-![Configuración de ACL](evidence/12-acls.png)
+![Configuración de ACL](01-firewall-dmz-nat-acl/evidence/12-acls.png)
 
 ### Políticas de acceso implementadas
 
@@ -270,7 +270,7 @@ Las ACL permiten aplicar políticas diferenciadas entre las zonas y limitar el a
 
 Se realizó una prueba de comunicación desde el segmento externo hacia la red interna.
 
-![Internet hacia MZ bloqueado](evidence/04-internet-to-mz-blocked.png)
+![Internet hacia MZ bloqueado](01-firewall-dmz-nat-acl/evidence/04-internet-to-mz-blocked.png)
 
 ### Resultado
 
@@ -278,7 +278,7 @@ La comunicación desde Internet hacia la red interna se encuentra restringida de
 
 También se documentó una prueba adicional de comunicación entre Internet y MZ:
 
-![Internet hacia MZ](evidence/08-internet-to-mz.png)
+![Internet hacia MZ](01-firewall-dmz-nat-acl/evidence/08-internet-to-mz.png)
 
 Estas pruebas permiten verificar el comportamiento del tráfico entre la red externa y la red interna.
 
@@ -294,7 +294,7 @@ El acceso administrativo se encuentra asociado a las políticas de seguridad imp
 
 Se realizó una prueba de conexión SSH desde un equipo perteneciente a la zona de Gestión hacia R1.
 
-![SSH desde Gestión](evidence/10-ssh-gestion-r1.png)
+![SSH desde Gestión](01-firewall-dmz-nat-acl/evidence/10-ssh-gestion-r1.png)
 
 ### Resultado
 
@@ -306,7 +306,7 @@ La conexión SSH desde la zona de Gestión fue exitosa, verificando el acceso ad
 
 Se realizó una prueba de conexión SSH desde un equipo perteneciente a la MZ hacia R1.
 
-![SSH desde MZ](evidence/11-ssh-mz-r1.png)
+![SSH desde MZ](01-firewall-dmz-nat-acl/evidence/11-ssh-mz-r1.png)
 
 ### Resultado
 
@@ -322,7 +322,7 @@ Se implementó routing para permitir la comunicación entre las diferentes redes
 
 La solución utiliza **RIP versión 2** para el intercambio de información de routing entre los routers.
 
-![Tabla de routing](evidence/13-routing-table.png)
+![Tabla de routing](01-firewall-dmz-nat-acl/evidence/13-routing-table.png)
 
 La tabla de routing permite identificar:
 
