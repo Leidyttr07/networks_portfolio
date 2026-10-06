@@ -4,7 +4,7 @@
 
 Diseño e implementación de una infraestructura LAN empresarial en Cisco Packet Tracer, orientada a la segmentación de usuarios mediante VLAN, comunicación entre redes, asignación dinámica de direcciones IP y aplicación de mecanismos básicos de seguridad de capa 2.
 
-![Topología de red](02-enterprise-lan-vlan-dhcp-security/evidence/01-topology.png)
+![Topología de red](evidence/01-topology.png)
 
 La arquitectura integra dos switches de acceso, un router Cisco, un servidor DHCP y equipos finales distribuidos en diferentes VLAN. El enrutamiento entre VLAN se implementa mediante **Router-on-a-Stick**, mientras que los enlaces troncales utilizan **802.1Q** para transportar múltiples VLAN.
 
@@ -93,7 +93,7 @@ La segmentación permite separar los dominios de broadcast y establecer una estr
 
 ### Evidencia
 
-![VLAN configuradas](02-enterprise-lan-vlan-dhcp-security/evidence/02-vlan-s1.png)
+![VLAN configuradas](evidence/02-vlan-s1.png)
 
 ---
 
