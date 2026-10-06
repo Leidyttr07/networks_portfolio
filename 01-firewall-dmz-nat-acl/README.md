@@ -47,7 +47,7 @@ Diseñar e implementar una arquitectura de red empresarial segmentada mediante u
 
 # 3. Arquitectura de red
 
-![Topología de red](01-firewall-dmz-nat-acl/evidence/01-topology.png)
+![Topología de red](evidence/01-topology.png)
 
 La arquitectura utiliza un router Cisco como punto central de comunicación entre las diferentes zonas.
 
